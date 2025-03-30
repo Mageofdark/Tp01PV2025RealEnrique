@@ -1,0 +1,30 @@
+html {
+  background-color: #0080c0;
+}
+header div {
+    
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 55px;
+
+
+}
+img {
+    width: 200px;
+    height: 100px;
+
+}
+header h1 {
+  color: #9c0d0d;
+}
+body h2 {
+  color: #8a0d0d;
+}
+.museo_titulo {
+    color: #a71717;
+}
+body h3 {
+    color: #b90808;
+}
