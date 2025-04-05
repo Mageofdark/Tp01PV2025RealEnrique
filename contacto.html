@@ -28,10 +28,31 @@
   <body>
     <form>
       <h3>califique la pagina</h3>
-      <input type="range" min="1" max="10" />
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" />
+      
+      <br>
+
+      <label for="apellido">apellido</label>
+      <input id="apellido" type="text" />
+      <br>
+      
+      <label for="callificacion">califiquenos del 1 al 10</label>
+      <input id="callificacion" type="range" min="1" max="10" />
       <h3>mandenos un mensaje</h3>
-      <input type="text" />
-      <input type="submit" />
+      
+      <input id="mensaje" type="textarea" />
+      <input id="boton" type="submit" />
     </form>
+    <script>
+        document.getElementById("boton").addEventListener("click",function mostrar_datos () {
+        let nombre = document.getElementById("nombre").value;
+        let apellido = document.getElementById("apellido").value;
+        
+        let mensaje = document.getElementById("mensaje").value;
+        
+        alert("nombre: "+nombre+" y apellido "+apellido+" mensaje: "+mensaje);
+      })
+    </script>
   </body>
 </html>
